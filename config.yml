@@ -1,0 +1,154 @@
+baseURL: https://www.neuralia.co/
+languageCode: en-us
+title: neuralia.co
+theme: "PaperMod"
+paginate: 8
+defaultContentLanguage: fr
+#copyright: Neuralia.co 
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+#languages:
+#  fr:
+#    params:
+#      linkedin: https://linkedin.com/fr/vincentporte
+#      navigation:
+#        help: Aide
+#        search: Rechercher
+#    title: vincentporte
+   # profileMode:
+   #   title: Projet de vie en cours
+#    weight: 1
+#  en:
+#    params:
+#      linkedin: https://linkedin.com/in/vincentporte
+#    navigation:
+#      help: Help
+#     search: search
+    #profileMode:
+    #  title: Ongoing life journey
+#    title: vincentporte
+#    weight: 2
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: neuralia.co
+  description: "Datascience, Machine Learning, API, Automated Process, Dev-Ops"
+  keywords: [Tech, DataScience, Machine Learning, API, DevOps, Entrepreneurship]
+  #author: vincentporte
+  author: ["Vincent Porte", "Amaury Leproux"] # multiple authors
+  images: ["profile.png"]
+  DateFormat: "2 January, 2006"
+  defaultTheme: dark #auto # dark, light
+  disableThemeToggle: false
+  ShowCanonicalLink: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  relativeURLs: true
+  imagePreview: true
+
+  #navigation:
+  #  search: Rechercher
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  #label:
+    #text: "Home"
+    #icon: /apple-touch-icon.png
+    #iconHeight: 35
+
+    # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: neuralia.co
+    subtitle: "Datascience, Machine Learning, API, Automated Process, Dev-Ops"
+    imageUrl: ./images/logo.png
+    imageWidth: 200
+    imageHeight: 200
+    imageTitle: "Skwych, Neuralia.co's mascot"
+    #buttons:
+     # - name: Entrepreneuriat
+      #  url: tags/entrepreneuriat
+    #  - name: Datascience
+     #   url: tags/datascience
+      #- name: Rencontrer L'Arche
+       # url: tags/rencontrerlarche
+#      - name: Bois
+  #      url: tags/woodworking
+ #     - name: Podcasts
+ #       url: categorys/podcasts
+
+
+  homeInfoParams:
+    Title: Neuralia.co
+    Content: Datascience, Machine Learning, API, Automated Process, Dev-Ops
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/company/neuralia-co"
+    - name: github
+      url: "https://github.com/organizations/neuralia-co"
+    - name: instagram
+      url: "https://instagram.com/neuralia_co"
+    - name: spotify
+      url: "https://open.spotify.com/show/7vx463HpANvyI7cI2S6o83"
+    - name: email
+      url: "mailto:contact@neuralia.co"
+    
+
+  cover:
+      hidden: true # hide everywhere but not in structured data
+      hiddenInList: true # hide on list pages and home
+      hiddenInSingle: true # hide on single page
+
+  #editPost:
+  #    URL: "https://github.com/<path_to_repo>/content"
+  #    Text: "Suggest Changes" # edit text
+  #    appendFilePath: true # to append file path to Edit link
+
+# for search
+# https://fusejs.io/api/options.html
+fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+menu:
+  main:
+    - identifier: 
+      name: Portfolio
+      url: https://swiloh.com
+      weight: 10
+    #- identifier: search
+    #  name: search
+    #  url: /search/
+    #  weight: 40

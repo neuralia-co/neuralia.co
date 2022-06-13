@@ -1,0 +1,8 @@
+{{- if .Params.tags }}
+<span>&nbsp;|</span>
+{{- range ($.GetTerms "tags") }}
+<span>
+    &nbsp;<a href="{{ .Permalink }}" title="back to {{ .LinkTitle }} posts">{{ .LinkTitle }}</a>
+</span>
+{{- end }}
+{{- end -}}
