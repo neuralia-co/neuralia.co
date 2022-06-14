@@ -142,12 +142,12 @@ outputs:
         - RSS
         - JSON # is necessary
 
-menu:
-  main:
-    - identifier: 
-      name: Portfolio
-      url: https://swiloh.com
-      weight: 10
+#menu:
+#  main:
+    #- identifier: 
+    #  name: Portfolio
+    #  url: https://swiloh.com
+    #  weight: 10
     #- identifier: search
     #  name: search
     #  url: /search/
