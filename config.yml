@@ -80,7 +80,7 @@ params:
     enabled: true # needs to be explicitly set
     title: neuralia.co
     subtitle: "Datascience, Machine Learning, API, Automated Process, Dev-Ops"
-    imageUrl: ./images/logo.png
+    imageUrl: ./images/logo_200.webp
     imageWidth: 200
     imageHeight: 200
     imageTitle: "Skwych, Neuralia.co's mascot"
