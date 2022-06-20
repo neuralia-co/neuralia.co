@@ -66,18 +66,24 @@
 {{- end }}
 
 {{- if (not .Site.Params.disableThemeToggle) }}
+{{- with .Site.Params.profileMode }}
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (document.body.className.includes("dark")) {
             document.body.classList.remove('dark');
+            document.getElementById('profil_img').src = '{{ .imageUrlLight | absURL }}';
             localStorage.setItem("pref-theme", 'light');
+            console.log('hire');
         } else {
             document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
+            document.getElementById('profil_img').src = '{{ .imageUrl | absURL }}';
+            console.log('zaire');
         }
     })
 
 </script>
+{{- end }}
 {{- end }}
 
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}

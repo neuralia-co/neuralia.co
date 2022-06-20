@@ -5,44 +5,50 @@ theme: "PaperMod"
 paginate: 8
 defaultContentLanguage: fr
 #copyright: Neuralia.co 
+displayFullLangName: true
 
 minify:
   disableXML: true
   minifyOutput: true
 
-#languages:
-#  fr:
-#    params:
-#      linkedin: https://linkedin.com/fr/vincentporte
-#      navigation:
-#        help: Aide
-#        search: Rechercher
-#    title: vincentporte
-   # profileMode:
-   #   title: Projet de vie en cours
-#    weight: 1
-#  en:
-#    params:
-#      linkedin: https://linkedin.com/in/vincentporte
-#    navigation:
-#      help: Help
-#     search: search
-    #profileMode:
-    #  title: Ongoing life journey
-#    title: vincentporte
-#    weight: 2
-
+languages:
+  fr:
+    weight: 10
+    languageName: Français 🇫🇷
+    profileMode:
+      enabled: true
+      title: neuralia.co
+      subtitle: "Datascience, Machine Learning, API, Process Automatisés, Dev-Ops"
+      imageUrl: ./images/logo.webp
+      imageUrlLight: ./images/logo_light.webp 
+      imageWidth: 200
+      imageHeight: 200
+      imageTitle: "Skwych, Neuralia.co's mascot"
+    
+  en:
+    weight: 20
+    languageName: English 🇬🇧
+    profileMode:
+      enabled: true
+      title: neuralia.co
+      subtitle: "Datascience, Machine Learning, API, Automated Process, Dev-Ops"
+      imageUrl: ./images/logo.webp
+      imageUrlLight: ./images/logo_light.webp 
+      imageWidth: 200
+      imageHeight: 200
+      imageTitle: "Skwych, Neuralia.co's mascot"
+  
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: neuralia.co
   description: "Datascience, Machine Learning, API, Automated Process, Dev-Ops"
   keywords: [Tech, DataScience, Machine Learning, API, DevOps, Entrepreneurship]
-  #author: vincentporte
   author: ["Vincent Porte", "Amaury Leproux"] # multiple authors
   images: ["profile.png"]
   DateFormat: "2 January, 2006"
   defaultTheme: dark #auto # dark, light
   disableThemeToggle: false
+  displayFullLangName: true
   ShowCanonicalLink: true
   ShowReadingTime: true
   ShowShareButtons: true
@@ -70,33 +76,12 @@ params:
     favicon32x32: ./images/logo_bleu_32_fond_blanc.png
     apple_touch_icon: ./images/logo_bleu_180_fond_blanc.png
 
-  #label:
-    #text: "Home"
-    #icon: /apple-touch-icon.png
-    #iconHeight: 35
+  label:
+    text: " "
+    icon: ./images/logo_blanc_64.png
+    iconHeight: 32
 
-    # profile-mode
-  profileMode:
-    enabled: true # needs to be explicitly set
-    title: neuralia.co
-    subtitle: "Datascience, Machine Learning, API, Automated Process, Dev-Ops"
-    imageUrl: ./images/logo.webp
-    imageWidth: 200
-    imageHeight: 200
-    imageTitle: "Skwych, Neuralia.co's mascot"
-    #buttons:
-     # - name: Entrepreneuriat
-      #  url: tags/entrepreneuriat
-    #  - name: Datascience
-     #   url: tags/datascience
-      #- name: Rencontrer L'Arche
-       # url: tags/rencontrerlarche
-#      - name: Bois
-  #      url: tags/woodworking
- #     - name: Podcasts
- #       url: categorys/podcasts
-
-
+ 
   homeInfoParams:
     Title: Neuralia.co
     Content: Datascience, Machine Learning, API, Automated Process, Dev-Ops
@@ -119,12 +104,7 @@ params:
       hiddenInList: true # hide on list pages and home
       hiddenInSingle: true # hide on single page
 
-  #editPost:
-  #    URL: "https://github.com/<path_to_repo>/content"
-  #    Text: "Suggest Changes" # edit text
-  #    appendFilePath: true # to append file path to Edit link
-
-# for search
+ # for search
 # https://fusejs.io/api/options.html
 fuseOpts:
   isCaseSensitive: false
@@ -141,13 +121,17 @@ outputs:
         - RSS
         - JSON # is necessary
 
-#menu:
-#  main:
-    #- identifier: 
-    #  name: Portfolio
-    #  url: https://swiloh.com
-    #  weight: 10
-    #- identifier: search
-    #  name: search
-    #  url: /search/
-    #  weight: 40
+menu:
+  main:
+    - identifier: 
+      name: mission
+      url: /mission
+      weight: 10
+    - identifier: 
+      name: team
+      url: /team
+      weight: 20
+    - identifier: 
+      name: portfolio
+      url: /portfolio
+      weight: 30
