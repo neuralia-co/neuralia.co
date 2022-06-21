@@ -14,7 +14,7 @@ minify:
 languages:
   fr:
     weight: 10
-    languageName: Français 🇫🇷
+    languageName: Fr 🇫🇷
     profileMode:
       enabled: true
       title: neuralia.co
@@ -23,11 +23,14 @@ languages:
       imageUrlLight: ./images/logo_light.webp 
       imageWidth: 200
       imageHeight: 200
-      imageTitle: "Skwych, Neuralia.co's mascot"
+      imageTitle: "Skwych, la mascotte de Neuralia.co"
+      buttons:
+        - name: mission
+          url: /mission
     
   en:
     weight: 20
-    languageName: English 🇬🇧
+    languageName: En 🇬🇧
     profileMode:
       enabled: true
       title: neuralia.co
@@ -37,6 +40,9 @@ languages:
       imageWidth: 200
       imageHeight: 200
       imageTitle: "Skwych, Neuralia.co's mascot"
+      buttons:
+        - name: mission
+          url: /en/mission
   
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -121,17 +127,17 @@ outputs:
         - RSS
         - JSON # is necessary
 
-menu:
-  main:
-    - identifier: 
-      name: mission
-      url: /mission
-      weight: 10
-    - identifier: 
-      name: team
-      url: /team
-      weight: 20
-    - identifier: 
-      name: portfolio
-      url: /portfolio
-      weight: 30
+#menu:
+#  main:
+#    - identifier: 
+#      name: mission
+#      url: /mission
+#      weight: 10
+#    - identifier: 
+#      name: team
+#      url: /team
+#      weight: 20
+#    - identifier: 
+#      name: portfolio
+#      url: /portfolio
+#      weight: 30
